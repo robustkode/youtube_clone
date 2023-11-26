@@ -1,0 +1,29 @@
+@import "../../base.scss";
+.watchScreen__player {
+  height: 60vh;
+  background-color: #353946;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.relatedVideos {
+  &__show_more_videos {
+    button {
+      // background-color: transparent;
+      // color: #3c9ff5;
+      // border: solid $border-color 1px;
+      // border-radius: 20px;
+    }
+  }
+}
+@media (max-width: $breakpoint-small) {
+  .watchScreen__player {
+    height: 35vh;
+  }
+  .comments__error {
+    display: none;
+  }
+}
+
+@media (max-width: $boot-breakpoint-medium) {
+}

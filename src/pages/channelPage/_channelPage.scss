@@ -1,0 +1,37 @@
+@import "../../_base.scss";
+
+.channelHeader {
+  border-bottom: 1px solid $border-color;
+  &__left {
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+  }
+
+  button {
+    background-color: #fff;
+    border-radius: 20px;
+    color: #000;
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+
+    border: none;
+  }
+
+  .channelHeader__details__subscribed {
+    background-color: $border-color;
+    color: #fff;
+  }
+}
+
+@media (max-width: $breakpoint-medium) {
+  .channelHeader {
+    padding: 1.1girem 0;
+    h3 {
+      font-size: 1rem;
+      margin: 0;
+    }
+  }
+}

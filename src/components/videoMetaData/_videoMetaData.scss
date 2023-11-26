@@ -1,0 +1,72 @@
+@import "../../_base.scss";
+.videoMetaData {
+  &__top {
+    span {
+      cursor: pointer;
+    }
+  }
+
+  &__channel {
+    border-top: 0.2px solid $border-color;
+    border-bottom: 0.2px solid $border-color;
+  }
+  &__thumbnail {
+    &__channel {
+      width: 60%;
+      button {
+        background-color: #fff;
+        border-radius: 20px;
+        color: #000;
+        font-size: 1rem;
+        padding: 0.3rem 1rem;
+
+        border: none;
+
+        .subscribed {
+          background-color: $border-color;
+          color: #fff;
+        }
+        &:focus {
+          border: none;
+          outline: none;
+        }
+      }
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    &__likes {
+      background-color: transparentize($border-color, 0.7);
+      color: white;
+      border-radius: 20px;
+    }
+  }
+  &__description {
+    background-color: transparentize($border-color, 0.7);
+    padding: 1rem;
+    font-size: 0.9rem;
+    white-space: pre;
+    border-radius: 10px;
+    border: none;
+    .showMoreText {
+      text-decoration: none;
+      display: block;
+      margin: 1rem 0;
+      color: #fff;
+      font-weight: 500;
+    }
+  }
+  .show_more_descrip {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: $breakpoint-small) {
+  .videoMetaData {
+    h5 {
+      font-size: 1.1rem;
+    }
+  }
+}

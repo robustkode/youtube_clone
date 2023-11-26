@@ -1,0 +1,16 @@
+@import "../../base.scss";
+.hompage__videos {
+  margin-top: 9vh !important;
+}
+
+.categoriesBar {
+  position: fixed !important;
+  top: 8.5vh;
+  z-index: 999;
+}
+
+@media (max-width: $breakpoint-small) {
+  .categoriesBar {
+    display: none;
+  }
+}

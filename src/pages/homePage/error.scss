@@ -1,0 +1,10 @@
+@import "../../base.scss";
+
+.quota-error {
+  height: 70vh;
+  display: grid;
+  place-items: center;
+  .error_container {
+    background-color: $border-color;
+  }
+}

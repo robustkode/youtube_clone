@@ -1,0 +1,30 @@
+.comments__form {
+  img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  &__add {
+    border-bottom: 2px solid #353946;
+
+    input {
+      background: transparent;
+      border: none;
+      color: #fff;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      background-color: white;
+      border-radius: 20px;
+      color: black;
+      letter-spacing: 0.5px;
+      &:focus {
+        border: none;
+        outline: none;
+      }
+    }
+  }
+}
